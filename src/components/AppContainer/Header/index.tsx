@@ -22,7 +22,9 @@ export const Header = () => {
   return (
     <header className="w-full py-[26px] bg-neutral-950/50 fixed z-[999]">
       <div className="container flex items-center justify-between">
-        <Logo />
+        <Link href="/">
+          <Logo />
+        </Link>
 
         <div className="flex items-center gap-16">
           <nav className="hidden lg:block">

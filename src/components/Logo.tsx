@@ -2,11 +2,11 @@ export const Logo = () => {
   return (
     <div className="flex items-center">
       <svg
-        width="117"
-        height="60"
+        className="w-[80px] h-[40px] sm:w-[100px] sm:h-[50px] md:w-[117px] md:h-[60px]"
         viewBox="0 0 117 60"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
+        preserveAspectRatio="xMidYMid meet"
       >
         <g filter="url(#filter0_d_0_1)">
           <path

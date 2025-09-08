@@ -1,19 +1,12 @@
 import { Button } from "@/components/Button";
-import Image from "next/image";
 
 export const HomeHero = () => {
   return (
-    <main className="hero-banner overflow-hidden">
-      <Image
-        className="w-full h-full object-cover relative inset-0"
-        src="/images/home/hero-image.png"
-        alt="Imagem do banner"
-        fill
-      />
-
-      <div className="container h-screen md:min-h-[656px] md:max-h-[656px] relative z-[10] md:h-full flex flex-col justify-center">
+    <main className="hero-banner overflow-hidden ">
+      <div className="hero-bg" />
+      <div className="container h-screen md:min-h-[656px] md:max-h-[656px] relative z-20 md:h-full flex flex-col justify-center">
         <div className="flex flex-col w-full md:max-w-[611px]">
-          <h1 className="text-neutral-50 font-bold text-[42px] w-full text-center md:text-left">
+          <h1 className="text-neutral-50 font-bold text-2xl sm:text-[42px] w-full text-center md:text-left">
             Desenvolvemos a sua necessidade.
           </h1>
 

@@ -4,8 +4,8 @@ import Image from "next/image";
 
 export const AboutView = () => {
   return (
-    <section className="flex overflow-hidden">
-      <div className="hidden lg:block w-full relative min-h-[543px] max-h-[543px]">
+    <section id="quem-somos" className="flex overflow-hidden">
+      <div className="hidden lg:block w-full relative min-h-[543px]">
         <Image
           className="w-full absolute inset-0 h-full object-cover"
           fill
@@ -16,9 +16,11 @@ export const AboutView = () => {
 
       <div className="bg-neutral-900 w-full px-4 py-8 lg:px-14 lg:py-12">
         <div className="half-container lg:align-right flex flex-col justify-center h-full">
-          <TitleSection title="Quem somos" />
+          <div className="w-full flex justify-center sm:justify-start">
+            <TitleSection title="Quem somos" />
+          </div>
 
-          <p className="text-base md:text-lg text-left lg:text-justify text-neutral-50 mt-12 mb-8">
+          <p className="text-base md:text-lg text-center sm:text-left text-neutral-50 mt-12 mb-8">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry&apos;s standard dummy
             text ever since the 1500s, when an unknown printer took a galley of
@@ -30,6 +32,7 @@ export const AboutView = () => {
           </p>
 
           <Button
+            className="mx-auto sm:mx-0"
             content="Conheça nossa equipe"
             icon={
               <svg

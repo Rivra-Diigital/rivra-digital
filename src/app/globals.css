@@ -134,13 +134,7 @@ body {
 .container {
   max-width: 1140px;
   margin: 0 auto;
-  padding: 0;
-}
-
-@media (max-width: 1023px) {
-  .container {
-    padding: 0 16px;
-  }
+  padding: 0 16px;
 }
 
 .half-container {
@@ -149,11 +143,15 @@ body {
   max-width: 570px;
 }
 
-/* @media (min-width: 1024px) {
+@media (max-width: 1023px) {
   .half-container {
-    max-width: 570px;
+    max-width: 100%;
   }
-} */
+}
+
+*, body, html {
+  scroll-behavior: smooth;
+}
 
 .align-left {
   margin-left: auto;
@@ -170,10 +168,16 @@ body {
 .hero-banner::after {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.4);
-  z-index: 1;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 15;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background: url("/images/home/hero-image.png") center/cover no-repeat;
+  filter: blur(6px);
+  transform: scale(1.2);
+  z-index: 10;
 }
