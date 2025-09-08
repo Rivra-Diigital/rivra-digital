@@ -47,8 +47,8 @@ export const Header = () => {
                 <path
                   d="M7.2 13.0002L10.8306 8.76453C11.2158 8.31514 11.2158 7.65202 10.8306 7.20263L7.2 2.96691"
                   stroke="#FAF5FF"
-                  stroke-width="1.1"
-                  stroke-linecap="round"
+                  strokeWidth="1.1"
+                  strokeLinecap="round"
                 />
               </svg>
             }

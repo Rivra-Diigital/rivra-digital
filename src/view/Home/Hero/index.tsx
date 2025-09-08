@@ -31,8 +31,8 @@ export const HomeHero = () => {
                 <path
                   d="M6.7 13.0002L10.3306 8.76453C10.7158 8.31514 10.7158 7.65202 10.3306 7.20263L6.7 2.96691"
                   stroke="#FAFAFA"
-                  stroke-width="1.1"
-                  stroke-linecap="round"
+                  strokeWidth="1.1"
+                  strokeLinecap="round"
                 />
               </svg>
             }
