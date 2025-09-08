@@ -15,18 +15,18 @@ export const AboutView = () => {
       </div>
 
       <div className="bg-neutral-900 w-full px-4 py-8 lg:px-14 lg:py-12">
-        <div className="lg:half-container lg:align-right">
+        <div className="lg:half-container lg:align-right flex flex-col justify-center h-full">
           <TitleSection title="Quem somos" />
 
           <p className="text-base md:text-lg text-neutral-50 mt-12 mb-8">
             Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. Lorem Ipsum is simply
-            dummy text of the printing and typesetting industry. Lorem Ipsum has
-            been the industry's standard dummy text ever since the 1500s, when
-            an unknown printer took a galley of type and scrambled it to make a
-            type specimen book.
+            industry. Lorem Ipsum has been the industry&apos;s standard dummy
+            text ever since the 1500s, when an unknown printer took a galley of
+            type and scrambled it to make a type specimen book. Lorem Ipsum is
+            simply dummy text of the printing and typesetting industry. Lorem
+            Ipsum has been the industry&apos;s standard dummy text ever since
+            the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book.
           </p>
 
           <Button

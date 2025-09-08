@@ -3,11 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack -p 3000",
-    "build": "next build --turbopack",
-    "start": "next start -p $PORT",
-    "lint": "eslint ."
-  },
+  "dev": "next dev --turbopack -p 3000",
+  "build": "next build --turbopack",
+  "start": "next start -p $PORT",
+  "lint": "eslint ."
+},
   "dependencies": {
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
