@@ -1,6 +1,7 @@
 import { Button } from "@/components/Button";
 import { Logo } from "@/components/Logo";
 import Link from "next/link";
+import { MobileMenu } from "./MobileMenu";
 
 const navigation = [
   {
@@ -19,7 +20,7 @@ const navigation = [
 
 export const Header = () => {
   return (
-    <header className="w-full py-[26px] bg-neutral-800/50 fixed z-[999]">
+    <header className="w-full py-[26px] bg-neutral-950/50 fixed z-[999]">
       <div className="container flex items-center justify-between">
         <Logo />
 
@@ -54,6 +55,8 @@ export const Header = () => {
               </svg>
             }
           />
+
+          <MobileMenu />
         </div>
       </div>
     </header>

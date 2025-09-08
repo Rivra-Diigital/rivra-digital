@@ -12,7 +12,7 @@ export const TitleSection = ({
   return (
     <div className={`flex flex-col gap-4 w-max ${className}`}>
       <div className="flex flex-col gap-2">
-        <h2 className="text-2xl md:text-[32px] font-bold text-neutral-50">{title}</h2>
+        <h2 className="text-xl md:text-[32px] font-bold text-neutral-50">{title}</h2>
         <div className="w-full h-[4px] bg-lime-200 rounded-2xl"></div>
       </div>
       {description && (

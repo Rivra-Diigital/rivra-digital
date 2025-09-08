@@ -11,13 +11,14 @@ export const HomeHero = () => {
         fill
       />
 
-      <div className="container min-h-[656px] max-h-[656px] relative z-[10] h-full flex flex-col justify-center">
+      <div className="container h-screen md:min-h-[656px] md:max-h-[656px] relative z-[10] md:h-full flex flex-col justify-center">
         <div className="flex flex-col w-full md:max-w-[611px]">
-          <h1 className="text-neutral-50 font-bold text-[42px] w-full">
+          <h1 className="text-neutral-50 font-bold text-[42px] w-full text-center md:text-left">
             Desenvolvemos a sua necessidade.
           </h1>
 
           <Button
+            className="mx-auto md:mx-0 mt-4"
             content="Conheça nosso trabalho"
             color="green"
             icon={
