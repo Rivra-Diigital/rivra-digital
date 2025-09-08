@@ -1,7 +1,11 @@
-import { HomeHero } from "./Hero"
+import { AboutView } from "./About";
+import { HomeHero } from "./Hero";
 
 export const HomeView = () => {
   return (
-    <HomeHero />
-  )
-}
+    <>
+      <HomeHero />
+      <AboutView />
+    </>
+  );
+};

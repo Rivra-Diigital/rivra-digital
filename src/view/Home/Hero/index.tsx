@@ -12,7 +12,7 @@ export const HomeHero = () => {
       />
 
       <div className="container min-h-[656px] max-h-[656px] relative z-[10] h-full flex flex-col justify-center">
-        <div className="flex flex-col max-w-[611px]">
+        <div className="flex flex-col w-full md:max-w-[611px]">
           <h1 className="text-neutral-50 font-bold text-[42px] w-full">
             Desenvolvemos a sua necessidade.
           </h1>

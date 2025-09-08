@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 interface ButtonProps {
+  className?: string;
   onClick?: () => void;
   content: string;
   icon?: React.ReactNode;
@@ -8,7 +9,7 @@ interface ButtonProps {
   url?: string;
 }
 
-export const Button = ({ onClick, content, icon, color = "purple", url }: ButtonProps) => {
+export const Button = ({ className, onClick, content, icon, color = "purple", url }: ButtonProps) => {
   const colorStyles = {
     purple: "bg-purple-800",
     green: "bg-lime-800",
@@ -20,7 +21,7 @@ export const Button = ({ onClick, content, icon, color = "purple", url }: Button
 
   if (url) {
     return (
-      <Link href={url} className={buttonStyles}>
+      <Link href={url} className={buttonStyles + " " + className}>
         {content}
         {icon}
       </Link>
@@ -28,7 +29,7 @@ export const Button = ({ onClick, content, icon, color = "purple", url }: Button
   }
 
   return (
-    <button onClick={onClick} className={buttonStyles}>
+    <button onClick={onClick} className={buttonStyles + " " + className}>
       {content}
       {icon}
     </button>

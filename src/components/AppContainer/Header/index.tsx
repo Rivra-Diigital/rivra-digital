@@ -24,7 +24,7 @@ export const Header = () => {
         <Logo />
 
         <div className="flex items-center gap-16">
-          <nav>
+          <nav className="hidden lg:block">
             <ul className="flex gap-6">
               {navigation.map((item) => (
                 <li key={item.name} className="text-neutral-50 font-medium">
@@ -35,6 +35,7 @@ export const Header = () => {
           </nav>
 
           <Button
+            className="hidden lg:flex"
             content="Contate-nos"
             icon={
               <svg
