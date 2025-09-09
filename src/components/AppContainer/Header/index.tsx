@@ -2,6 +2,7 @@ import { Button } from "@/components/Button";
 import { Logo } from "@/components/Logo";
 import Link from "next/link";
 import { MobileMenu } from "./MobileMenu";
+import { ContactModal } from "@/components/form/ContactModal";
 
 const navigation = [
   {
@@ -37,24 +38,28 @@ export const Header = () => {
             </ul>
           </nav>
 
-          <Button
-            className="hidden lg:flex"
-            content="Contate-nos"
-            icon={
-              <svg
-                width="17"
-                height="16"
-                viewBox="0 0 17 16"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M7.2 13.0002L10.8306 8.76453C11.2158 8.31514 11.2158 7.65202 10.8306 7.20263L7.2 2.96691"
-                  stroke="#FAF5FF"
-                  strokeWidth="1.1"
-                  strokeLinecap="round"
-                />
-              </svg>
+          <ContactModal
+            trigger={
+              <Button
+                className="hidden lg:flex"
+                content="Contate-nos"
+                icon={
+                  <svg
+                    width="17"
+                    height="16"
+                    viewBox="0 0 17 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.2 13.0002L10.8306 8.76453C11.2158 8.31514 11.2158 7.65202 10.8306 7.20263L7.2 2.96691"
+                      stroke="#FAF5FF"
+                      strokeWidth="1.1"
+                      strokeLinecap="round"
+                    />
+                  </svg>
+                }
+              />
             }
           />
 

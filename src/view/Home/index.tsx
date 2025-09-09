@@ -1,3 +1,4 @@
+import { ContactForm } from "@/components/form/ContactForm";
 import { AboutView } from "./About";
 import { HomeHero } from "./Hero";
 import { ServicesView } from "./Services";

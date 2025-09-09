@@ -1,9 +1,11 @@
 import Link from "next/link";
 
 interface ButtonProps {
+  type?: "button" | "submit" | "reset";
+  disabled?: boolean;
   className?: string;
   onClick?: () => void;
-  content: string;
+  content: string | React.ReactNode;
   icon?: React.ReactNode;
   color?: "purple" | "green" | "blue";
   size?: "small" | "default" | "large";

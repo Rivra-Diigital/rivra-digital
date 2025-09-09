@@ -1,8 +1,10 @@
-import { Header } from "@/components/AppContainer/Header";
+import { Header } from "@/components/appContainer/Header";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
-import { Footer } from "@/components/AppContainer/Footer";
+import { Footer } from "@/components/appContainer/Footer";
+import Script from "next/script";
+import { Toaster } from "sonner";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -14,7 +16,7 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Rivra Digital",
   description:
-    "Criar descrição",
+    "Desenvolvemos sua necessidade",
 };
 
 export default function RootLayout({
@@ -24,11 +26,22 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
+      <head>
+        <Script
+          type="text/javascript"
+          id="hs-script-loader"
+          async
+          defer
+          src={`//js.hs-scripts.com/${process.env.NEXT_PUBLIC_HUBSPOT_PORTAL_ID}.js`}
+        />
+      </head>
+
       <body
         className={`${poppins.variable} antialiased bg-gradient-to-b from-neutral-950 to-neutral-800`}
       >
         <Header />
         {children}
+        <Toaster />
         <Footer />
       </body>
     </html>
