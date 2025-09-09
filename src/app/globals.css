@@ -140,6 +140,7 @@ body {
 .half-container {
   width: 100%;
   overflow-x: hidden;
+  padding: 0 16px;
   max-width: 570px;
 }
 
@@ -208,4 +209,41 @@ html {
   .service-card::after {
     display: none;
   }
+}
+
+@keyframes carousel {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.carousel-track {
+  display: flex;
+  width: 200%; /* essencial: duas cópias lado a lado */
+  animation: carousel 60s linear infinite;
+}
+
+@media (max-width: 640px) {
+  .carousel-track {
+    animation: carousel 10s linear infinite;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .carousel-track {
+    animation: carousel 30s linear infinite;
+  }
+}
+
+.carousel-item {
+  flex: 0 0 auto; /* impede que estiquem/encolham */
+  width: 8rem; /* w-32 */
+  height: 8rem; /* h-32 */
+  margin: 0 1.5rem; /* mx-6 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

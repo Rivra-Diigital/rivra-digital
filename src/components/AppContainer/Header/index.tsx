@@ -20,7 +20,7 @@ const navigation = [
 
 export const Header = () => {
   return (
-    <header className="w-full py-[26px] bg-neutral-950/50 fixed z-[999]">
+    <header className="w-full py-[26px] bg-neutral-950/60 fixed z-[999] backdrop-blur-2xl">
       <div className="container flex items-center justify-between">
         <Link href="/">
           <Logo />
