@@ -14,7 +14,7 @@ export const AboutView = () => {
         />
       </div>
 
-      <div className="bg-neutral-900 w-full px-4 py-8 lg:px-14 lg:py-12">
+      <div className="w-full px-4 py-8 lg:px-14 lg:py-12">
         <div className="half-container lg:align-right flex flex-col justify-center h-full">
           <div className="w-full flex justify-center sm:justify-start">
             <TitleSection title="Quem somos" />

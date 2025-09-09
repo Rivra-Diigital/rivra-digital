@@ -149,7 +149,9 @@ body {
   }
 }
 
-*, body, html {
+*,
+body,
+html {
   scroll-behavior: smooth;
 }
 
@@ -180,4 +182,30 @@ body {
   filter: blur(6px);
   transform: scale(1.2);
   z-index: 10;
+}
+
+.service-card {
+  position: relative;
+}
+
+.service-card:last-child::after {
+  display: none;
+}
+
+.service-card::after {
+  content: "";
+  position: absolute;
+  background-color: #bef264;
+  border-radius: 2px;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 12px;
+  height: 20px;
+}
+
+@media (min-width: 1024px) {
+  .service-card::after {
+    display: none;
+  }
 }
