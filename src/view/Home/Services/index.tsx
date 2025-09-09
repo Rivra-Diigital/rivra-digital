@@ -48,9 +48,9 @@ export const ServicesView = () => {
               key={card.title}
               className="bg-neutral-800 p-5 rounded-2xl flex flex-col shadow-md service-card"
             >
-              <div className="flex items-center justify-center sm:justify-start gap-2">
+              <div className="flex flex-wrap items-center justify-center sm:justify-start gap-2">
                 {card.icon}
-                <h3 className="text-xl lg:text-2xl text-lime-200 font-semibold">
+                <h3 className="text-xl lg:text-2xl text-lime-200 font-semibold text-center sm:text-left">
                   {card.title}
                 </h3>
               </div>
