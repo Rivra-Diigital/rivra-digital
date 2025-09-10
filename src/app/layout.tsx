@@ -1,8 +1,8 @@
 import { Header } from "@/components/appContainer/Header";
+import { Footer } from "@/components/appContainer/Footer";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
-import { Footer } from "@/components/appContainer/Footer";
 import Script from "next/script";
 import { Toaster } from "sonner";
 
