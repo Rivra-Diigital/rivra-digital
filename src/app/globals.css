@@ -140,7 +140,6 @@ body {
 .half-container {
   width: 100%;
   overflow-x: hidden;
-  padding: 0 16px;
   max-width: 570px;
 }
 
