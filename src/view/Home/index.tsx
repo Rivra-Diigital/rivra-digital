@@ -3,6 +3,7 @@ import { AboutView } from "./About";
 import { HomeHero } from "./Hero";
 import { ServicesView } from "./Services";
 import { SolutionsView } from "./Solutions";
+import { Timeline } from "./Timeline";
 
 export const HomeView = () => {
   return (
@@ -13,6 +14,7 @@ export const HomeView = () => {
         <ServicesView />
         <SolutionsView />
       </div>
+      <Timeline />
     </>
   );
 };

@@ -11,9 +11,9 @@ export const SolutionsView = () => {
             description="Garantimos a integridade do seu projeto utilizando soluções seguras e que cabem no seu bolso."
           />
         </div>
-      </div>
 
-      <Carousel />
+        <Carousel />
+      </div>
     </section>
   );
 };
