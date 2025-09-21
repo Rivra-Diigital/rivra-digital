@@ -153,6 +153,7 @@ body {
 body,
 html {
   scroll-behavior: smooth;
+  scroll-margin-top: 150px;
 }
 
 .align-left {
