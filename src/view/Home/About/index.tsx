@@ -36,7 +36,7 @@ export const AboutView = () => {
           </p>
 
           <ValuesModal
-            trigger={<Button content="Conheça o nosso propósito" />}
+            trigger={<Button className="mx-auto sm:mx-0" content="Conheça o nosso propósito" />}
           />
         </div>
       </div>
