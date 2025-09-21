@@ -1,6 +1,8 @@
 import { Button } from "@/components/Button";
 import { Logo } from "@/components/Logo";
 import Link from "next/link";
+import { MobileMenu } from "./MobileMenu";
+import { ContactModal } from "@/components/form/ContactModal";
 
 const navigation = [
   {
@@ -19,12 +21,14 @@ const navigation = [
 
 export const Header = () => {
   return (
-    <header className="w-full py-[26px] bg-neutral-800/50 fixed z-[999]">
+    <header className="w-full py-[26px] bg-neutral-950/60 fixed z-[999] backdrop-blur-2xl">
       <div className="container flex items-center justify-between">
-        <Logo />
+        <Link href="/">
+          <Logo />
+        </Link>
 
         <div className="flex items-center gap-16">
-          <nav>
+          <nav className="hidden lg:block">
             <ul className="flex gap-6">
               {navigation.map((item) => (
                 <li key={item.name} className="text-neutral-50 font-medium">
@@ -34,25 +38,32 @@ export const Header = () => {
             </ul>
           </nav>
 
-          <Button
-            content="Contate-nos"
-            icon={
-              <svg
-                width="17"
-                height="16"
-                viewBox="0 0 17 16"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M7.2 13.0002L10.8306 8.76453C11.2158 8.31514 11.2158 7.65202 10.8306 7.20263L7.2 2.96691"
-                  stroke="#FAF5FF"
-                  stroke-width="1.1"
-                  stroke-linecap="round"
-                />
-              </svg>
+          <ContactModal
+            trigger={
+              <Button
+                className="hidden lg:flex"
+                content="Contate-nos"
+                icon={
+                  <svg
+                    width="17"
+                    height="16"
+                    viewBox="0 0 17 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.2 13.0002L10.8306 8.76453C11.2158 8.31514 11.2158 7.65202 10.8306 7.20263L7.2 2.96691"
+                      stroke="#FAF5FF"
+                      strokeWidth="1.1"
+                      strokeLinecap="round"
+                    />
+                  </svg>
+                }
+              />
             }
           />
+
+          <MobileMenu />
         </div>
       </div>
     </header>

@@ -6,6 +6,8 @@ export const Footer = () => {
       <div className="container flex justify-between items-center">
         <Logo />
 
+        <small className="text-neutral-50 font-medium uppercase">rivra@rivradigital.com</small>
+
         <small className="text-neutral-50 font-medium">© 2025 RIVRA DIGITAL</small>
       </div>
     </footer>
