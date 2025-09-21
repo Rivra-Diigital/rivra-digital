@@ -140,7 +140,6 @@ body {
 .half-container {
   width: 100%;
   overflow-x: hidden;
-  padding: 0 16px;
   max-width: 570px;
 }
 
@@ -154,6 +153,7 @@ body {
 body,
 html {
   scroll-behavior: smooth;
+  scroll-margin-top: 150px;
 }
 
 .align-left {
@@ -248,31 +248,32 @@ html {
 
 .carousel-track {
   display: flex;
-  width: 200%; /* essencial: duas cópias lado a lado */
+  width: max-content;
   animation: carousel 60s linear infinite;
 }
 
 @media (max-width: 640px) {
   .carousel-track {
-    animation: carousel 10s linear infinite;
+    animation: carousel 20s linear infinite;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .carousel-track {
-    animation: carousel 30s linear infinite;
+    animation: carousel 40s linear infinite;
   }
 }
 
 .carousel-item {
-  flex: 0 0 auto; /* impede que estiquem/encolham */
-  width: 8rem; /* w-32 */
-  height: 8rem; /* h-32 */
+  flex: 0 0 auto;
+  width: 86px; /* w-32 */
+  height: 86px; /* h-32 */
   margin: 0 1.5rem; /* mx-6 */
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 
 .custom-scroll::-webkit-scrollbar {
   width: 8px;
