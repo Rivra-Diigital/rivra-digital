@@ -10,8 +10,8 @@ export const Carousel = () => {
             <Image
               src={item.image}
               alt={item.name}
-              width={128}
-              height={128}
+              width={86}
+              height={86}
               className="object-contain"
             />
           </div>
