@@ -27,7 +27,9 @@ export const AboutView = () => {
             carrega uma essência única que merece ser expressada com
             autenticidade. Dessa forma, buscamos transformar a identidade do seu
             negócio em algo que vai além da estética e transcende a barreira
-            digital, dando alma ao seu projeto. Combinando a sensibilidade
+            digital, dando alma ao seu projeto.
+            <br/><br/>
+            Combinando a sensibilidade
             humana com a eficácia comprovada da inteligência artificial,
             trazemos soluções com agilidade e qualidade, sem abrir mão do
             cuidado em cada detalhe. E mais do que criar, buscamos conectar
